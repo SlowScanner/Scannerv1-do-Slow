@@ -1,0 +1,13 @@
+# Ignorar relatórios gerados pelo scanner
+relatorios/
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.cache
+
+# Arquivos do sistema Android / Linux
+.DS_Store
+Thumbs.db
