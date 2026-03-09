@@ -1,110 +1,142 @@
 #!/bin/bash
 
-mkdir -p relatorios
-
-RELATORIO="relatorios/scan_$(date +%H-%M-%S).txt"
-
-# Detectar caminho do storage automaticamente
-if [ -d "/storage/emulated/0" ]; then
 BASE="/storage/emulated/0"
-elif [ -d "$HOME/storage/shared" ]; then
-BASE="$HOME/storage/shared"
-else
-echo "ERRO: armazenamento não encontrado."
-echo "Execute: termux-setup-storage"
-exit
-fi
 
-banner(){
+USER_LOGIN="slow"
+USER_PASS="luccaz"
+
+banner() {
+
 clear
+
 echo "======================================="
-echo "      SLOW SECURITY SCANNER V5"
+echo "        SLOW SECURITY SCANNER V1"
 echo "======================================="
-echo "Storage detectado: $BASE"
 echo
+echo "   ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"
+echo "   █  SLOW ANALISES PAINEL  █"
+echo "   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀"
+echo
+echo "            by SlowScanner"
+echo
+
 }
 
-scan_storage(){
+login() {
+
+while true
+do
 
 banner
-echo "Iniciando scan profundo..."
+
+read -p "Usuario: " user
+read -s -p "Senha: " pass
+echo
+
+if [[ "$user" == "$USER_LOGIN" && "$pass" == "$USER_PASS" ]]; then
+
+echo
+echo "Acesso permitido..."
+sleep 2
+break
+
+else
+
+echo
+echo "Login incorreto"
+sleep 2
+
+fi
+
+done
+
+}
+
+scan_storage() {
+
+banner
+
+echo "Iniciando scan do armazenamento..."
 echo
 
 apk=0
 script=0
 sus=0
 hidden=0
-zipf=0
 
-echo "========== APKs =========="
+echo "======== APKs ========"
 
-find "$BASE" -type f -iname "*.apk" 2>/dev/null | while read file
+find $BASE -type f -iname "*.apk" 2>/dev/null | while read file
 do
 echo "[APK] $file"
-echo "[APK] $file" >> $RELATORIO
 ((apk++))
 done
 
 echo
-echo "========== SCRIPTS =========="
+echo "======== SCRIPTS ========"
 
-find "$BASE" -type f \( -iname "*.sh" -o -iname "*.py" -o -iname "*.lua" -o -iname "*.js" \) 2>/dev/null | while read file
+find $BASE -type f \( -iname "*.sh" -o -iname "*.py" -o -iname "*.lua" -o -iname "*.js" \) 2>/dev/null | while read file
 do
 echo "[SCRIPT] $file"
-echo "[SCRIPT] $file" >> $RELATORIO
 ((script++))
 done
 
 echo
-echo "========== SUSPEITOS =========="
+echo "======== SUSPEITOS ========"
 
-find "$BASE" -type f \( -iname "*mod*" -o -iname "*cheat*" -o -iname "*hack*" -o -iname "*inject*" \) 2>/dev/null | while read file
+find $BASE -type f \( -iname "*mod*" -o -iname "*cheat*" -o -iname "*hack*" \) 2>/dev/null | while read file
 do
 echo "[SUSPEITO] $file"
-echo "[SUSPEITO] $file" >> $RELATORIO
 ((sus++))
 done
 
 echo
-echo "========== OCULTOS =========="
+echo "======== OCULTOS ========"
 
-find "$BASE" -type f -name ".*" 2>/dev/null | while read file
+find $BASE -type f -name ".*" 2>/dev/null | while read file
 do
 echo "[OCULTO] $file"
-echo "[OCULTO] $file" >> $RELATORIO
 ((hidden++))
 done
 
 echo
-echo "========== COMPRIMIDOS =========="
+echo "Scan finalizado"
 
-find "$BASE" -type f \( -iname "*.zip" -o -iname "*.rar" -o -iname "*.7z" \) 2>/dev/null | while read file
-do
-echo "[ZIP] $file"
-echo "[ZIP] $file" >> $RELATORIO
-((zipf++))
-done
+read -p "ENTER para voltar"
 
-echo
-echo "================================="
-echo "SCAN FINALIZADO"
-echo "Relatório salvo em: $RELATORIO"
-echo
-
-read -p "Pressione ENTER para voltar"
 }
 
 apps_instalados(){
 
 banner
-echo "Apps instalados no sistema:"
+
+echo "Apps instalados:"
 echo
 
-pm list packages
+cmd package list packages 2>/dev/null | sed 's/package://'
 
 echo
 read -p "ENTER para voltar"
+
 }
+
+buscar_zips(){
+
+clear
+echo "================================="
+echo "      BUSCANDO ARQUIVOS ZIP"
+echo "================================="
+echo
+
+find /storage/emulated/0 -type f -iname "*.zip" 2>/dev/null
+
+echo
+echo "Busca finalizada."
+echo
+read -p "Pressione ENTER para voltar"
+
+}
+
 
 menu(){
 
@@ -115,6 +147,7 @@ banner
 
 echo "[1] Scan completo do storage"
 echo "[2] Apps instalados"
+echo "[3] Buscar arquivos baixados"
 echo "[0] Sair"
 
 echo
@@ -124,6 +157,7 @@ case $op in
 
 1) scan_storage ;;
 2) apps_instalados ;;
+3) buscar_zips ;;
 0) exit ;;
 
 esac
@@ -132,4 +166,5 @@ done
 
 }
 
+login
 menu
