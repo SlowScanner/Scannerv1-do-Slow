@@ -1,110 +1,135 @@
-#!/system/bin/sh
+#!/bin/bash
 
-# Slow Security Scanner
-# Adaptado para APK com botões
+mkdir -p relatorios
 
-REPORT_DIR="/storage/emulated/0/SlowScanner"
+RELATORIO="relatorios/scan_$(date +%H-%M-%S).txt"
 
-mkdir -p $REPORT_DIR
+# Detectar caminho do storage automaticamente
+if [ -d "/storage/emulated/0" ]; then
+BASE="/storage/emulated/0"
+elif [ -d "$HOME/storage/shared" ]; then
+BASE="$HOME/storage/shared"
+else
+echo "ERRO: armazenamento não encontrado."
+echo "Execute: termux-setup-storage"
+exit
+fi
 
-scan_storage() {
-
-echo "Escaneando armazenamento..."
-
-find /storage/emulated/0 -type f > $REPORT_DIR/scan_files.txt 2>/dev/null
-
-echo "Scan completo"
-echo "Arquivo salvo em $REPORT_DIR/scan_files.txt"
-
+banner(){
+clear
+echo "======================================="
+echo "      SLOW SECURITY SCANNER V5"
+echo "======================================="
+echo "Storage detectado: $BASE"
+echo
 }
 
-hidden_files() {
+scan_storage(){
 
-echo "Detectando arquivos ocultos..."
+banner
+echo "Iniciando scan profundo..."
+echo
 
-find /storage/emulated/0 -type f -name ".*" > $REPORT_DIR/hidden_files.txt 2>/dev/null
+apk=0
+script=0
+sus=0
+hidden=0
+zipf=0
 
-echo "Scan completo"
-echo "Arquivo salvo em $REPORT_DIR/hidden_files.txt"
+echo "========== APKs =========="
 
+find "$BASE" -type f -iname "*.apk" 2>/dev/null | while read file
+do
+echo "[APK] $file"
+echo "[APK] $file" >> $RELATORIO
+((apk++))
+done
+
+echo
+echo "========== SCRIPTS =========="
+
+find "$BASE" -type f \( -iname "*.sh" -o -iname "*.py" -o -iname "*.lua" -o -iname "*.js" \) 2>/dev/null | while read file
+do
+echo "[SCRIPT] $file"
+echo "[SCRIPT] $file" >> $RELATORIO
+((script++))
+done
+
+echo
+echo "========== SUSPEITOS =========="
+
+find "$BASE" -type f \( -iname "*mod*" -o -iname "*cheat*" -o -iname "*hack*" -o -iname "*inject*" \) 2>/dev/null | while read file
+do
+echo "[SUSPEITO] $file"
+echo "[SUSPEITO] $file" >> $RELATORIO
+((sus++))
+done
+
+echo
+echo "========== OCULTOS =========="
+
+find "$BASE" -type f -name ".*" 2>/dev/null | while read file
+do
+echo "[OCULTO] $file"
+echo "[OCULTO] $file" >> $RELATORIO
+((hidden++))
+done
+
+echo
+echo "========== COMPRIMIDOS =========="
+
+find "$BASE" -type f \( -iname "*.zip" -o -iname "*.rar" -o -iname "*.7z" \) 2>/dev/null | while read file
+do
+echo "[ZIP] $file"
+echo "[ZIP] $file" >> $RELATORIO
+((zipf++))
+done
+
+echo
+echo "================================="
+echo "SCAN FINALIZADO"
+echo "Relatório salvo em: $RELATORIO"
+echo
+
+read -p "Pressione ENTER para voltar"
 }
 
-apks() {
+apps_instalados(){
 
-echo "Procurando APKs..."
+banner
+echo "Apps instalados no sistema:"
+echo
 
-find /storage/emulated/0 -type f -name "*.apk" > $REPORT_DIR/apk_list.txt 2>/dev/null
+pm list packages
 
-echo "Lista de APKs salva em $REPORT_DIR/apk_list.txt"
-
+echo
+read -p "ENTER para voltar"
 }
 
-installed_apps() {
+menu(){
 
-echo "Listando aplicativos instalados..."
+while true
+do
 
-pm list packages > $REPORT_DIR/installed_apps.txt
+banner
 
-echo "Lista salva em $REPORT_DIR/installed_apps.txt"
+echo "[1] Scan completo do storage"
+echo "[2] Apps instalados"
+echo "[0] Sair"
 
-}
+echo
+read -p "Escolha: " op
 
-suspicious_scripts() {
+case $op in
 
-echo "Procurando scripts suspeitos..."
-
-find /storage/emulated/0 -type f \( -name "*.sh" -o -name "*.py" -o -name "*.js" \) > $REPORT_DIR/scripts.txt 2>/dev/null
-
-echo "Lista salva em $REPORT_DIR/scripts.txt"
-
-}
-
-generate_report() {
-
-echo "Gerando relatório..."
-
-cat $REPORT_DIR/*.txt > $REPORT_DIR/report.txt
-
-echo "Relatório salvo em $REPORT_DIR/report.txt"
-
-}
-
-case "$1" in
-
-scan)
-scan_storage
-;;
-
-hidden)
-hidden_files
-;;
-
-apks)
-apks
-;;
-
-apps)
-installed_apps
-;;
-
-scripts)
-suspicious_scripts
-;;
-
-report)
-generate_report
-;;
-
-*)
-echo "Slow Security Scanner"
-echo ""
-echo "Comandos disponíveis:"
-echo "scan"
-echo "hidden"
-echo "apks"
-echo "apps"
-echo "scripts"
-echo "report"
-;;
+1) scan_storage ;;
+2) apps_instalados ;;
+0) exit ;;
 
 esac
+
+done
+
+}
+
+menu

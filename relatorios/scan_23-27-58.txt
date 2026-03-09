@@ -1,0 +1,102 @@
+[APK] /storage/emulated/0/Download/Vou Precisar/Gravador_de_tela.apk
+[APK] /storage/emulated/0/Download/Vou Precisar/app-game-release.apk
+[APK] /storage/emulated/0/Download/MobileScanner.apk
+[APK] /storage/emulated/0/Download/Among_Us_v2026.2.24_Signed_Menu_v20.1_by_Aadil.apk
+[APK] /storage/emulated/0/Download/Free Fire V7A X Jujutsu Otimizado ✅/FREE FIRE V7A SUPER OTIMIZADO.apk
+[APK] /storage/emulated/0/Download/app-release.apk
+[APK] /storage/emulated/0/Download/scanner/com.termux_1021.apk
+[APK] /storage/emulated/0/Download/APK Editor_1.9.0_APKPure.apk
+[APK] /storage/emulated/0/Download/Hello World_1.0_APKPure.apk
+[APK] /storage/emulated/0/ApkEditor/gen_signed.apk
+[SCRIPT] /storage/emulated/0/Download/botda4m/cogs/anunciar.py
+[SCRIPT] /storage/emulated/0/Download/botda4m/cogs/cargos.py
+[SCRIPT] /storage/emulated/0/Download/botda4m/cogs/fila_pro.py
+[SCRIPT] /storage/emulated/0/Download/botda4m/cogs/paineis.py
+[SCRIPT] /storage/emulated/0/Download/botda4m/cogs/partida_pro.py
+[SCRIPT] /storage/emulated/0/Download/botda4m/database.py
+[SCRIPT] /storage/emulated/0/Download/botda4m/main.py
+[SCRIPT] /storage/emulated/0/Download/botda4m/utils.py
+[SCRIPT] /storage/emulated/0/Download/scannerdoslow/modules/file_scan.sh
+[SCRIPT] /storage/emulated/0/Download/scannerdoslow/modules/modification_time.sh
+[SCRIPT] /storage/emulated/0/Download/scannerdoslow/modules/deleted_trace.sh
+[SCRIPT] /storage/emulated/0/Download/scannerdoslow/modules/apk_integrity.sh
+[SCRIPT] /storage/emulated/0/Download/scannerdoslow/modules/app_permissions.sh
+[SCRIPT] /storage/emulated/0/Download/scannerdoslow/monitor.sh
+[SCRIPT] /storage/emulated/0/Download/scannerdoslow/start.sh
+[SCRIPT] /storage/emulated/0/Download/scanner/scanner.sh
+[SUSPEITO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/.Shared/md1FVPmxvgGYTVWXmPdmodbWoOUGzRQXytz9ybiXMUQ=.enc.tmp
+[SUSPEITO] /storage/emulated/0/Download/cheat
+[SUSPEITO] /storage/emulated/0/Download/scannerdoslow/modules/modification_time.sh
+[SUSPEITO] /storage/emulated/0/Download/scannerdoslow/logs/file_modification_times.txt
+[SUSPEITO] /storage/emulated/0/Recordings/modmenu
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp AI Media/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp AI Media/WhatsApp AI Editor Cache/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Audio/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Audio/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Animated Gifs/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Animated Gifs/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Voice Notes/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Voice Notes/202610/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Video Notes/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Video/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Video/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/.Links/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/.Statuses/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/.udDHFY8K4Eqg/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/.wamocache/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Bug Report Attachments/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Stickers/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Backup Excluded Stickers/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Sticker Packs/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp/WhatsApp/.Shared/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business AI Media/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business AI Media/WhatsApp Business AI Editor Cache/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Audio/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Audio/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Animated Gifs/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Animated Gifs/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Voice Notes/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Voice Notes/202610/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Voice Notes/202611/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Video Notes/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Video/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Video/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Images/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Images/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Documents/Sent/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Documents/Private/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/.Links/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/.Statuses/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/.udDHFY8K4Eqg/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/.wamocache/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Bug Report Attachments/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Stickers/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Backup Excluded Stickers/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Sticker Packs/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Quick Reply Attachments/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Premium Message Media/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Ad Creation Media/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/Media/WhatsApp Business Ad Auto Reply Media/.nomedia
+[OCULTO] /storage/emulated/0/Android/media/com.whatsapp.w4b/WhatsApp Business/.Shared/.nomedia
+[OCULTO] /storage/emulated/0/Music/.thumbnails/.database_uuid
+[OCULTO] /storage/emulated/0/Music/.thumbnails/.nomedia
+[OCULTO] /storage/emulated/0/Pictures/.thumbnails/.database_uuid
+[OCULTO] /storage/emulated/0/Pictures/.thumbnails/.nomedia
+[OCULTO] /storage/emulated/0/Movies/.thumbnails/.database_uuid
+[OCULTO] /storage/emulated/0/Movies/.thumbnails/.nomedia
+[OCULTO] /storage/emulated/0/Download/.anydesk/.iid
+[OCULTO] /storage/emulated/0/DCIM/Camera/.trashed-1775434429-IMG_20260306_211325_492.jpg
+[OCULTO] /storage/emulated/0/DCIM/Camera/.trashed-1775434446-IMG_20260306_211359_503.jpg
+[OCULTO] /storage/emulated/0/DCIM/Camera/.trashed-1775566340-VID_20260308_095211.mp4
+[OCULTO] /storage/emulated/0/Documents/.sys_id.dat
+[ZIP] /storage/emulated/0/Download/Vou Precisar/Botdefilasffincompleto.zip
+[ZIP] /storage/emulated/0/Download/Vou Precisar/LUCKY BOT.7z
+[ZIP] /storage/emulated/0/Download/Vou Precisar.zip
+[ZIP] /storage/emulated/0/Download/Free Fire V7a X Jujutsu mobile unforgiven.zip
+[ZIP] /storage/emulated/0/Download/scannerdoslow/scanner.zip
+[ZIP] /storage/emulated/0/Download/scanner.zip
+[ZIP] /storage/emulated/0/Download/Sketchware-Pro-7.0.0.zip
